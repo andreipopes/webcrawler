@@ -16,8 +16,10 @@ public class ListLinks {
 //        String url = args[0];
 //        print("Fetching %s...", url);
 
-        String url = "https://asculta.zonga.ro/#/playlist/t264weg8qqla8";
-		Document doc = Jsoup.connect(url).get();
+    	String url = "https://asculta.zonga.ro/#/playlist/t264weg8qqla8";
+    	Document doc = Jsoup.connect(url).get();
+    	doc = Jsoup.connect(url).get();
+    	doc = Jsoup.connect(url).get();
         Elements links = doc.select("a[href]");
         Elements media = doc.select("[src]");
         Elements songs = doc.getElementsByClass("trackTxt ellipsis");
